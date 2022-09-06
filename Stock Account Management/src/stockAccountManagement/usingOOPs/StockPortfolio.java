@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class StockPortfolio {
 	
 	ArrayList<Stock> listOfStocks = new ArrayList<>();
-	private static int balance = 0;
+	private static int balance = 10000;
 	
 	static Scanner sc = new Scanner(System.in);
 
@@ -50,7 +50,6 @@ public class StockPortfolio {
 	}
 	
 	public void debit() {
-		balance = calculateTotalValue();
 		System.out.println("\nBalance amount :$" + balance);
 		System.out.print("Enter the amount to be withdrawn : ");
 		int debit = sc.nextInt();
